@@ -1,0 +1,387 @@
+header{
+    width: 7.5rem;
+    height: 0.88rem;
+    text-align: center;
+    line-height: 0.88rem;
+    color: #4ebbfe;
+    padding:0 0.22rem;
+    -webkit-box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0.03rem 0.43rem 0 rgba(41, 167, 255, 0.13);
+}
+header a{
+    display: inline-block;
+    float: left;
+    color: #36a8fe;
+}
+.thumb{
+    margin-top: 0.88rem;
+    height: 6.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thumb > img{
+    width: 3rem;
+    height: 3.6rem;
+}
+.goods{
+    padding: 0 0.24rem;
+}
+.goods > h1{
+    font-size: 0.28rem;
+    color: #000;
+    opacity: 0.6;
+    padding-bottom: 0.1rem;
+}
+.goods > p.desc{
+    font-size: 0.22rem;
+    color: rgba(0, 0, 0, 0.3);
+    line-height: 1.5;
+    height: 0.66rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+}
+.info {
+    font-size: 0.2rem;
+    padding: 0.18rem 0;
+    border-bottom: 0.01rem solid rgba(0, 0, 0, 0.04);
+}
+.info > span{
+    margin-right: 0.2rem;
+}
+.info > span:first-child{
+    font-size: 0.26rem;
+    color: #fbb548;
+}
+.info > span:nth-child(2){
+    color: #4eb2fc;
+    background: rgba(65,178,252,0.1);
+    padding: 0.08rem 0.2rem;
+    border-radius: 0.22rem;
+    margin-right: 0.3rem;
+}
+.info > span:nth-child(3){
+    color: #36d681;
+    background: rgba(54,214,129,0.1);
+    padding: 0.08rem 0.2rem;
+    border-radius: 0.22rem;
+}
+.info .total{
+    padding-right: 0.1rem;
+    float: right;
+    font-size: 0.2rem;
+}
+.info .total i{
+    font-size: 0.24rem;
+    color: #36a8fe;
+}
+.discount{
+    height: 0.55rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0.15rem 0;
+}
+.discount > span.sale{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.36rem;
+    padding-top: 0.06rem;
+}
+.discount > span.c{
+    display: inline-block;
+    font-size: 0.24rem;
+    color: #ff844e;
+    line-height: 1.2;
+}
+.discount > span.btn{
+    display: inline-block;
+    margin-left: 0.2rem;
+    width: 1.45rem;
+    height: 0.38rem;
+    padding: 0.08rem 0.2rem;
+    border-radius: 0.22rem;
+    /*!*css中引入图片*!*/
+    /*background-image: url("../image/avatar.jpg");*/
+    /*颜色渐变，*/
+    /*background-image: linear-gradient(0deg，一开始的颜色,后边);*/
+    /*background-image: linear-gradient(jiaodu   0deg    ，一开始的颜色  51%,后边);*/
+    background-image: linear-gradient(270deg,#ffca3b 0%,#ff933b 100%),linear-gradient(
+            #ffc471, #ffc471);
+    box-shadow: 0 0.04rem 0.16rem 0 rgba(255, 142, 81, 0.3);
+    font-size: 0.24rem;
+    text-align: center;
+}
+.option{
+    height: 0.75rem;
+    border-bottom: 0.01rem solid rgba(0, 0, 0, 0.04);
+    border-top: 0.01rem solid rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: start;
+}
+.option > li{
+    margin: 0.15rem 0.4rem 0.15rem 0;
+    padding-left: 0.1rem;
+    font-size: 0.24rem;
+    color: #41b2fc;
+    line-height: 0.4rem;
+    position: relative;
+}
+.option > li::before{
+    content: '';
+    width: 0.05rem;
+    height: 0.05rem;
+    border-radius: 0.03rem;
+    box-shadow: 0 0.02rem 0.05rem 0 rgba(54, 214, 129, 0.43);
+    background-color: #36d681;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -0.06rem;
+}
+.float{
+    overflow: hidden;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+.float h2{
+    padding:0.2rem 0.1rem;
+    color: #333333;
+    font-size: 0.32rem;
+    float: left;
+    position: relative;
+}
+.float h2::before{
+    content: '';
+    width: 0.05rem;
+    height: 0.05rem;
+    border-radius: 0.03rem;
+    box-shadow: 0 0.02rem 0.05rem 0 rgba(54, 214, 129, 0.43);
+    background-color: #36d681;
+    position: absolute;
+    top: 50%;
+    left: 0rem;
+    /*margin-top: -0.04rem;*/
+}
+.float h2 b{
+    display: inline-block;
+    color: #3bacfe;
+    font-size: 0.32rem;
+}
+.float > a{
+    padding:0.2rem 0.1rem;
+    color: #3bacfe;
+    font-size: 0.22rem;
+    float: right;
+}
+.float > a .iconfont{
+    color: #3bacfe;
+    display: inline-block;
+    font-size: 0.18rem;
+    margin-left: 0.1rem;
+}
+.appraise > li{
+    padding:0.4rem 0 0.5rem 0;
+    overflow: hidden;
+    border-bottom: 0.01rem solid rgba(0, 0, 0, 0.04);
+}
+.appraise > li .actor{
+    float: left;
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -10px;
+}
+.appraise > li > .usersay{
+    padding-left: 0.13rem;
+    width: 6rem;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.appraise > li > .usersay .tou{
+    height: 0.5rem;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 0.1rem;
+}
+.appraise > li > .usersay .tou span{
+    color: #cfcfcf;
+    font-size: 0.2rem;
+    margin-right: 0.2rem;
+    padding: 0.08rem 0 0 0;
+}
+.appraise > li > .usersay .tou .star{
+    display: inline-block;
+    width: 1.1rem;
+    height: 0.25rem;
+    position: relative;
+    margin-top: 0.1rem;
+    /*background: #fbb548;*/
+}
+.appraise > li > .usersay .tou .star > div{
+    width: 1.1rem;
+    height: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*overflow: hidden;*/
+}
+.appraise > li > .usersay .tou .star > div > div.iconfont{
+    color: #3bacfe;
+    font-size: 0.13rem;/*overflow: hidden;*/
+}
+.appraise > li > .usersay .tou .star > div > div.icon-wuxing{
+    color: #7c7c7c;
+    font-size: 0.13rem;/*overflow: hidden;*/
+}
+.appraise > li > .usersay .tou span.date{
+    /*background: #fbb548;*/
+    float: right;
+}
+.appraise > li > .usersay p{
+    color: #000000;
+    opacity: 0.6;
+    font-size: 0.26rem;
+    margin-bottom: 0.1rem;
+}
+.appraise > li > .usersay .area{
+    line-height: 0.32rem;
+    color: #000000;
+    opacity: 0.3;
+    font-size: 0.22rem;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0.2rem;
+}
+.appraise > li > .usersay .area span{
+    font-size: 0.22rem;
+    line-height: 0.32rem;
+    color: #000000;
+    opacity: 0.4;
+    margin-right: 0.1rem;
+}
+.appraise > li > .usersay .photo{
+    width: 1.80rem;
+    height: 1.01rem;
+}
+.produce{
+    padding:0.2rem 0.1rem;
+    border-bottom: 0.01rem solid rgba(0, 0, 0, 0.04);
+}
+h2{
+    color: #333333;
+    font-size: 0.32rem;
+    position: relative;
+}
+ h2::before{
+    content: '';
+    width: 0.05rem;
+    height: 0.05rem;
+    border-radius: 0.03rem;
+    box-shadow: 0 0.02rem 0.05rem 0 rgba(54, 214, 129, 0.43);
+    background-color: #36d681;
+    position: absolute;
+    top: 50%;
+    left: 0rem;
+    /*margin-top: -0.04rem;*/
+}
+h2 b{
+    display: inline-block;
+    color: #3bacfe;
+    font-size: 0.32rem;
+}
+.commend{
+    padding:0.2rem 0.1rem;
+    border-bottom: 0.01rem solid rgba(0, 0, 0, 0.04);
+    margin-bottom: 1rem;
+}
+.commend .proList {
+    margin-top: 0.2rem;
+    height: 6rem;
+    width: 100%;
+    /*background: #36d681;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*align-content: space-between;*/
+}
+.commend .proList li{
+    width: 2.0rem;
+    height: 2.5rem;
+    padding:0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.commend .proList li > div {
+    width: 1.4rem;
+    height: 1.3rem;
+}
+.commend .proList li > span{
+    font-size: 0.26rem;
+    color: #000000;
+    opacity: 0.6;
+}
+.commend .proList li > span.yuan{
+    display: block;
+    font-size: 0.28rem;
+    color: #fbb548;
+}
+.webList{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.22rem;
+    height: 0.98rem;
+    width: 100%;
+    /*加上定位之后，宽失效，得写出来*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.webList li{
+    opacity: 0.5;
+}
+.webList > li.hot{
+    opacity: 1;
+}
+.webList li > a{
+    /*width: 0.7rem;*/
+    display: block;
+    height: 100%;
+    text-align: center ;
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+    font-size: 0.24rem;
+}
+.webList li > a.che{
+    width: 1.96rem;
+    height: 0.6rem;
+    background-image: linear-gradient(90deg, #37e06f 0%, #31d69a 100%), linear-gradient(#3bacfe, #3bacfe);
+    box-shadow: 0 0.04rem 0.2rem 0 rgba(55, 223, 116, 0.75);
+    border-radius: 30px;
+}
+.webList li > a.che span{
+    font-size: 0.24rem;
+    color: #FFFFFF;
+}
+.webList li > a span{
+    color: #333333;
+}
+.webList li:hover {
+    opacity: 1;
+}
+.webList li a .image{
+    width: 0.5rem;
+    height: 0.5rem;
+}

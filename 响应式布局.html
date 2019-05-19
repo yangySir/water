@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式布局</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .header{
+            height: auto;
+            background: #6eb49c;
+            overflow: hidden;
+            padding: 20px;
+            margin: 20px auto;
+            box-sizing: border-box;
+        }
+        /*属性选择器的样式应用*/
+        div[active]{
+            height: 100px;
+            width: auto;
+            float: left;
+        }
+        @media screen and (max-width: 680px){
+            .header{
+                background: #9f683b;
+                width: 500px;
+            }
+            div[active]{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 680px){
+            .header{
+                background: #9f6593;
+                width: 700px;
+            }
+            div[active]{
+                width: 50%;
+            }
+        }
+        /*3*/
+        @media screen and (min-width: 768px){
+            .header{
+                background: #289f52;
+                width: 800px;
+            }
+            div[active]{
+                width: 33.333333%;
+            }
+        }
+        /*4*/
+        @media screen and (min-width: 992px){
+            .header{
+                background: #ac3f9a;
+                width: 1000px;
+            }
+            div[active]{
+                width: 25%;
+            }
+        }
+        /*6*/
+        @media screen and (min-width: 1200px){
+            .header{
+                background: #2c5160;
+                width: 1200px;
+            }
+            div[active]{
+                width: 16.666666%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<!--    属性选择器-->
+    <div active="true">1</div>
+    <div active="true">2</div>
+    <div active="true">3</div>
+    <div active="true">4</div>
+    <div active="true">5</div>
+    <div active="true">6</div>
+    <div active="true">7</div>
+    <div active="true">8</div>
+    <div active="true">9</div>
+    <div active="true">10</div>
+    <div active="true">11</div>
+    <div active="true">12</div>
+</div>
+</body>
+</html>

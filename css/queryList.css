@@ -1,0 +1,164 @@
+header{
+    width: 7.5rem;
+    height: 0.88rem;
+    text-align: center;
+    line-height: 0.88rem;
+    color: #4ebbfe;
+    padding:0 0.22rem;
+    -webkit-box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0.03rem 0.43rem 0 rgba(41, 167, 255, 0.13);
+}
+header a{
+    display: inline-block;
+    float: left;
+    color: #36a8fe;
+}
+.research{
+    margin-top: 0.88rem;
+    margin-left: 0.4rem;
+    width: 6.6rem;
+    height: 0.6rem;
+    border-radius: 0.3rem;
+    border: solid 0.03rem rgba(55, 169, 254, 0.17);
+    background-color: #ebf7ff;
+}
+.research .researchlogo{
+    margin: 0.08rem 0.1rem;
+    width: 0.79rem;
+    height: 0.44rem;
+    background: #a4e0bd;
+    border-radius: 0.21rem;
+    float: right;
+    line-height: 0.44rem;
+}
+.research > .researchlogo > .iconfont{
+    text-align: center;
+    color: #36a8fe;
+    margin-left: 0.22rem;
+}
+.kind{
+    padding: 0.2rem 1rem;
+    height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+.kind .kindItem{
+    width: 1.33rem;
+    height: 0.52rem;
+    border-radius: 0.26rem;
+    box-shadow: 0 0.05rem 0.12rem 0 rgba(59, 172, 254,0.43);
+}
+.kind .kindItem a{
+    color: #36a8fe;
+    margin-left: 0.45rem;
+    font-size: 0.22rem;
+}
+.saleImg{
+    padding: 0 0.22rem;
+    height: 2.55rem;
+    margin-bottom: 0.2rem;
+}
+.list{
+    /*实现铺满效果*/
+    width: 7.5rem;
+    padding:0 0.22rem;
+    position: absolute;
+    top: 5.2rem;
+    bottom: 0;
+    box-sizing: border-box;
+}
+.list .float{
+    overflow: hidden;
+    margin-bottom: 0.1rem;
+}
+.list .float h2{
+    display: inline-block;
+    color: #333333;
+    font-size: 0.32rem;
+    float: left;
+}
+.list > .float > a{
+    color: #3bacfe;
+    font-size: 0.22rem;
+    float: right;
+}
+.list > .float > a .iconfont{
+    color: #3bacfe;
+    display: inline-block;
+    font-size: 0.18rem;
+    margin-left: 0.1rem;
+}
+.list .queryList{
+/*  较长的大框*/
+    height: 10rem;
+    /*background: #FF947C;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list .queryList li{
+    width: 3.25rem;
+    height: 4.3rem;
+    /*background: #61E37A;*/
+    /*border-bottom: 0.01rem solid rgba(0, 0, 0, 0.04);*/
+}
+.list .queryList li a .image{
+    padding: 0.5rem 0.8rem;
+}
+.list .queryList li a span{
+    font-weight: bold;
+    font-size: 0.3rem;
+    float: left;
+    color: rgba(0, 0, 0, 0.6);
+    height: 0.38rem;
+}
+.list .queryList li a i{
+    float: right;
+    font-size: 0.28rem;
+    color:  #fbb548;;
+}
+.list .queryList li .label{
+    display: block;
+    font-size: 0.22rem;
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 0.01rem solid rgba(0, 0, 0, 0.04);
+}
+.list .queryList li .rate{
+    display: inline-block;
+    font-size: 0.22rem;
+    color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding:0 0.4rem 0.1rem 0.1rem;
+}
+.list .queryList li .rate::before{
+    content: '';
+    width: 0.05rem;
+    height: 0.05rem;
+    background-color: #44b5ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.list .queryList li .rate strong{
+    display: inline-block;
+    font-size: 0.26rem;
+    color: #36a8fe;
+}
+.list .queryList li .btn{
+    width: 1.21rem;
+    height: 0.35rem;
+    border-radius: 0.18rem;
+    background: rgba(59, 171, 255,0.1);
+    float: left;
+    text-align: center;
+    line-height: 0.35rem;
+    font-size: 0.2rem;
+    margin-right: 0.2rem;
+    color: #36a8fe;
+}

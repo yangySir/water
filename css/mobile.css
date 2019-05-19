@@ -1,0 +1,148 @@
+/*@import "base.css";*/
+
+header {
+    width: 7.5rem;
+    height: 0.88rem;
+    text-align: center;
+    line-height: 0.88rem;
+    color: #4ebbfe;
+    box-shadow: 0 0.03rem 0.43rem 0 rgba(41, 167, 255, 0.13);
+}
+.search{
+    padding: 0.17rem 0.22rem;
+    overflow: hidden;
+    background: #fbfeff;
+}
+span{
+    color: #4ebbfe;
+    float: left;
+    line-height: 0.6rem;
+}
+.search a{
+    width: 5.93rem;
+    height: 0.6rem;
+    border-radius: 0.3rem;
+    border: solid 0.03rem #37A9FE;
+    float: right;
+    opacity: 0.17;
+}
+.banner{
+    position: relative;
+}
+.banner > a{
+    display: block;
+    /*用a包照片时，转化成块元素*/
+    height: 3rem;
+    width: 7.5rem;
+}
+.banner a img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.leftbtn , .rightbtn{
+    position: absolute;
+    top: 50%;
+    margin-top: -0.16rem;
+}
+.leftbtn{
+    left: 0.2rem;
+}
+.rightbtn{
+    right: 0.2rem;
+}
+.btnList{
+    height: 0.2rem;
+    width: 1.6rem;
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btnList li{
+    float: left;
+    margin-right: 0.2rem;
+    height: 0.2rem;
+    width: 0.2rem;
+}
+.btnList .btn{
+    float: left;
+    width: 0.06rem;
+    height: 0.06rem;
+    background: #7c7c7c;
+    border: 2px solid #c6c6c6;
+    border-radius: 0.05rem;
+    margin-right: 0.08rem;
+    cursor: pointer;
+}
+.btn:hover{  /*鼠标悬停的时候 按钮的样式*/
+    background-color: #e7e7e7;
+    border-color: #787878;
+    /*只改颜色,没必要background: #7c7c7c;
+    border: 2px solid #c6c6c6;故 -color*/
+}
+.category{
+/* 弹性模型应用，其子元素的float,position,display布局失效*/
+    height: 7rem;
+    padding: 0.22rem;
+    display: flex;
+    flex-wrap: wrap; /*    换行*/
+    justify-content: space-between;
+}
+.category li{
+    height: 2.2rem;
+    width: 1.8rem;
+}
+.category li > a{
+    height: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    /*主轴上的对齐方式*/
+    justify-content: flex-end;
+    /*交叉轴上项目如何对其*/
+    align-items: center;
+}
+.category li > a .image{
+    height: 1.13rem;
+    width: 1.13rem;
+}
+.category li span{
+    font-size: 0.24rem;
+    color: #8e9397;
+}
+.webList{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.22rem;
+    height: 0.98rem;
+    width: 100%;
+    /*加上定位之后，宽失效，得写出来*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.webList li{
+    opacity: 0.5;
+}
+.webList > li.hot{
+    opacity: 1;
+}
+.webList li > a{
+    width: 0.7rem;
+    height: 100%;
+    text-align: center ;
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+    font-size: 0.24rem;
+}
+.webList li:hover {
+    opacity: 1;
+}
+.webList li a .image{
+    width: 0.5rem;
+    height: 0.5rem;
+}
