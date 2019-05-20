@@ -23,6 +23,7 @@ header a{
     top: 1.13rem;
     left: 2.45rem;
     display: none;
+    padding: 3rem 0.3rem;
 }
 .list{
     /*实现铺满效果*/
