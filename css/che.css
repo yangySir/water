@@ -41,8 +41,8 @@ header a{
     box-sizing: border-box;
 }
 .list > ul > li{
-    /*height: 2.35rem;*/
-    padding: 0.1rem 0;
+    height: 2.35rem;
+    padding: 0.01rem 0;
     display: flex;
     position: relative;
 }
