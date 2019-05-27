@@ -5,6 +5,7 @@ header{
     line-height: 0.88rem;
     color: #4ebbfe;
     padding:0 0.22rem;
+    background-color: #fbfeff;
     -webkit-box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -118,6 +119,7 @@ header a{
     padding: 0 0.22rem;
     height: 0.98rem;
     width: 100%;
+    background-color: #fbfeff;
     /*加上定位之后，宽失效，得写出来*/
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -155,7 +157,7 @@ header a{
     display: block;
     color: #3bacfe;
     opacity: 0.6;
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     position: relative;
 }
 .webList li > a span::before{

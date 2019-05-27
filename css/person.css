@@ -1,0 +1,159 @@
+header{
+    width: 7.5rem;
+    height: 0.88rem;
+    text-align: center;
+    line-height: 0.88rem;
+    color: #4ebbfe;
+    padding:0 0.22rem;
+    background-color: #fbfeff;
+    -webkit-box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0.03rem 0.43rem 0 rgba(41, 167, 255, 0.13);
+}
+header a{
+    display: inline-block;
+    float: left;
+    color: #36a8fe;
+}
+.pian{
+    margin-top: 0.88rem;
+    height: 2.5rem;
+    width: 100%;
+    padding: 0.3rem 0.54rem;
+    box-sizing: border-box;
+    display: flex;
+}
+.pian .ren{
+    width: 1.17rem;
+    height: 1.17rem;
+    border-radius: 50%;
+    margin: 0.34rem 0.29rem;
+    box-sizing: border-box;
+    background: #ffdd29;
+    overflow: hidden;
+}
+.pian .zhuren{
+    padding: 0.5rem 0.2rem;
+    flex: 1;
+}
+.pian .zhuren h3{
+    font-size: 0.3rem;
+    color: #000000;
+    opacity: 0.7;
+    letter-spacing: 0.01rem;
+}
+.pian .zhuren span{
+    font-size: 0.22rem;
+    color: #000000;
+    opacity: 0.4;
+    letter-spacing: 0.01rem;
+}
+.pian .zhuren span span.iconfont{
+    color: #ffdd29;
+    opacity: 1;
+    margin-right: 0.1rem;
+}
+.sale{
+    padding: 0 0.54rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    /*align-items: center;*/
+}
+.sale li div{
+    font-weight: bold;
+    font-size: 0.46rem;
+}
+.sale li:nth-child(1) div{
+    background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(48, 163, 254)), to(rgb(111,213,254)));
+    -webkit-background-clip: text; /*必需加前缀 -webkit- 才支持这个text值 */
+    -webkit-text-fill-color: transparent; /*text-fill-color会覆盖color所定义的字体颜色： */
+}
+.sale li:nth-child(2) div{
+    background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(45, 222, 89)), to(rgb(47, 212, 186)));
+    -webkit-background-clip: text; /*必需加前缀 -webkit- 才支持这个text值 */
+    -webkit-text-fill-color: transparent; /*text-fill-color会覆盖color所定义的字体颜色： */
+}
+.sale li:nth-child(3) div{
+    background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(255, 184, 58)), to(rgb(255, 227, 51)));
+    -webkit-background-clip: text; /*必需加前缀 -webkit- 才支持这个text值 */
+    -webkit-text-fill-color: transparent; /*text-fill-color会覆盖color所定义的字体颜色： */
+}
+.sale li i{
+    font-size: 0.24rem;
+    line-height: 40px;
+    font-style: normal;
+    color: #8e9397;
+    padding: 0 0.1rem;
+}
+.list{
+    padding: 0.3rem 0.54rem;
+}
+.list ul li{
+    /*background: #FF947C;*/
+    height: 0.9rem;
+    padding-left: 0.4rem;
+    position: relative;
+    border-bottom: 0.02rem #000000;
+}
+.list ul li::before{
+    content: '';
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background: #41b2fc;
+    position: absolute;
+    top: 50%;
+    left: 0.1rem;
+    margin-top: -0.05rem;
+}
+.list ul li a{
+    line-height: 0.9rem;
+    font-size: 0.28rem;
+    color: #000000;
+    opacity: 0.7;
+    letter-spacing:0.02rem;
+}
+.list ul li a span{
+    float: right;
+    font-weight: bold;
+    color: #fe624e;
+    font-size: 0.36rem;
+}
+.webList{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.22rem;
+    height: 0.98rem;
+    width: 100%;
+    /*加上定位之后，宽失效，得写出来*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.webList li{
+    opacity: 0.5;
+}
+.webList > li.hot{
+    opacity: 1;
+}
+.webList li > a{
+    width: 0.7rem;
+    height: 100%;
+    text-align: center ;
+    background-color: #fbfeff;
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+    font-size: 0.24rem;
+}
+.webList li:hover {
+    opacity: 1;
+}
+.webList li a .image{
+    width: 0.5rem;
+    height: 0.5rem;
+}

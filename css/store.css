@@ -5,6 +5,7 @@ header{
     line-height: 0.88rem;
     color: #4ebbfe;
     padding:0 0.22rem;
+    background-color: #fbfeff;
     -webkit-box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -110,13 +111,89 @@ header a{
     align-items: center;
 }
 .kind .kindItem{
-    width: 1.33rem;
+    width: 1.5rem;
     height: 0.52rem;
     border-radius: 0.26rem;
     box-shadow: 0 0.05rem 0.12rem 0 rgba(59, 172, 254,0.43);
 }
 .kind .kindItem a{
     color: #36a8fe;
-    margin-left: 0.45rem;
+    margin-left: 0.32rem;
     font-size: 0.22rem;
+}
+.prolist{
+    width: 100%;
+    padding: 0.2rem 0.1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prolist li{
+    padding: 0.2rem 0;
+    width: 100%;
+    height: 2rem;
+
+}
+.prolist li a{
+    display: flex;
+}
+.prolist li a .photo{
+    width: 2rem;
+    height: 2rem;
+    padding: 0 0.1rem;
+    box-sizing: border-box;
+}
+.prolist li a .block{
+    padding: 0 0.2rem;
+    flex:1;
+}
+.prolist li a .block h2{
+    font-size: 0.3rem;
+    color: #000000;
+    opacity: 0.6;
+}
+.prolist li a .block p{
+    font-size: 0.22rem;
+    line-height: 0.45rem;
+    color: #000000;
+    opacity: 0.3;
+}
+.prolist li a .block > span{
+    font-size: 0.2rem;
+    color: #000000;
+    opacity: 0.3;
+    padding: 0 0.2rem;
+    position: relative;
+}
+.prolist li a .block > span::before{
+    content: '';
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    position: absolute;
+    background:  #36a8fe;
+    top: 50%;
+    left: 0;
+    margin-top: -0.03rem;
+}
+.prolist li a .block > span i{
+    padding: 0 0.1rem;
+    font-style: normal;
+    font-size: 0.24rem;
+    color: #36a8fe;
+    font-weight: bold;
+}
+.prolist li a .block div{
+    margin-top: 0.1rem;
+}
+.prolist li a .block div .tu{
+    display: inline-block;
+    height: 0.3rem;
+    width: 0.3rem;
+}
+.prolist li a .block div span{
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #cfcfcf;
 }
